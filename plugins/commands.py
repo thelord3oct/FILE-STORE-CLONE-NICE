@@ -58,7 +58,8 @@ async def start(client, message):
         await message.reply_photo(
             photo=random.choice(PICS),
             caption=script.START_TXT.format(message.from_user.mention, me2),
-            reply_markup=reply_markup
+            reply_markup=reply_markup,
+            has_spoiler = True
         )
         return
 
@@ -376,6 +377,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.edit_text(
             text=script.ABOUT_TXT.format(me2),
             reply_markup=reply_markup,
+            has_spoiler = True,
             parse_mode=enums.ParseMode.HTML
         )
 
@@ -400,6 +402,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.edit_text(
             text=script.START_TXT.format(query.from_user.mention, me2),
             reply_markup=reply_markup,
+            has_spoiler = True,
             parse_mode=enums.ParseMode.HTML
         )
 
@@ -419,6 +422,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.edit_text(
             text=script.CLONE_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
+            has_spoiler = True,
             parse_mode=enums.ParseMode.HTML
         )          
 
@@ -438,6 +442,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.edit_text(
             text=script.HELP_TXT,
             reply_markup=reply_markup,
+            has_spoiler = True,
             parse_mode=enums.ParseMode.HTML
         )  
 
