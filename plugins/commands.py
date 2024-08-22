@@ -49,10 +49,10 @@ async def start(client, message):
             InlineKeyboardButton('🆘 ʜᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('🔎 ᴀʙᴏᴜᴛ', callback_data='about')                  
             ],[
-            InlineKeyboardButton('🗣️ ɢʀᴏᴜᴘ', url='https://t.me/LINKING_BACKUP'),
-            InlineKeyboardButton('📵 ᴄᴏɴᴛᴀᴄᴛ ᴜs', url='https://t.me/star_73')
+            InlineKeyboardButton('🗣️ ɢʀᴏᴜᴘ', url='https://t.me/hd_movies_movie_2024_xxx')
             ],[
-            InlineKeyboardButton('📥 ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ 💾', url='https://t.me/LINKING_BACKUP')
+            InlineKeyboardButton('📵 ᴄᴏɴᴛᴀᴄᴛ ᴜs', url='https://t.me/sheffyssamra')
+            
         ]]
         if CLONE_MODE == True:
             buttons.append([InlineKeyboardButton('🦾 ᴄʟᴏɴᴇ', callback_data='clone')])
@@ -389,10 +389,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🆘 ʜᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('🔎 ᴀʙᴏᴜᴛ', callback_data='about')                  
             ],[
-            InlineKeyboardButton('🗣️ ɢʀᴏᴜᴘ', url='https://t.me/LINKING_BACKUP'),
-            InlineKeyboardButton('📵 ᴄᴏɴᴛᴀᴄᴛ ᴜs', url='https://t.me/star_73')
+            InlineKeyboardButton('🗣️ ɢʀᴏᴜᴘ', url='https://t.me/hd_movies_movie_2024_xxx')
             ],[
-            InlineKeyboardButton('📥 ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ 💾', url='https://t.me/LINKING_BACKUP')
+            InlineKeyboardButton('📵 ᴄᴏɴᴛᴀᴄᴛ ᴜs', url='https://t.me/sheffyssamra')
         ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
