@@ -58,8 +58,7 @@ async def start(client, message):
         await message.reply_photo(
             photo=random.choice(PICS),
             caption=script.START_TXT.format(message.from_user.mention, me2),
-            reply_markup=reply_markup,
-            has_spoiler = True
+            reply_markup=reply_markup
         )
         return
 
