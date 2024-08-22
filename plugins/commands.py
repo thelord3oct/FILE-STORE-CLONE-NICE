@@ -1,5 +1,3 @@
-
-
 import os
 import logging
 import random
@@ -20,15 +18,9 @@ import base64
 from urllib.parse import quote_plus
 from TechVJ.utils.file_properties import get_name, get_hash, get_media_file_size
 logger = logging.getLogger(__name__)
-
 BATCH_FILES = {}
-
-
-
-
 def get_size(size):
     """Get size in readable format"""
-
     units = ["Bytes", "KB", "MB", "GB", "TB", "PB", "EB"]
     size = float(size)
     i = 0
@@ -36,8 +28,6 @@ def get_size(size):
         i += 1
         size /= 1024.0
     return "%.2f %s" % (size, units[i])
-
-
 @Client.on_message(filters.command("start") & filters.incoming)
 async def start(client, message):
     username = (await client.get_me()).username
@@ -61,8 +51,6 @@ async def start(client, message):
             reply_markup=reply_markup
         )
         return
-
-
     
     data = message.command[1]
     try:
@@ -138,7 +126,6 @@ async def start(client, message):
                     # Create the inline keyboard button with callback_data
                     user_id = message.from_user.id
                     username =  message.from_user.mention 
-
                     log_msg = await client.send_cached_media(
                         chat_id=LOG_CHANNEL,
                         file_id=msg.get("file_id"),
@@ -199,9 +186,6 @@ async def start(client, message):
                     pass
             await k.edit_text("<b>Your All Files/Videos is successfully deleted!!!</b>")
         return
-
-
-
     files_ = await get_file_details(file_id)           
     if not files_:
         pre, file_id = ((base64.urlsafe_b64decode(data + "=" * (-len(data) % 4))).decode("ascii")).split("_", 1)
@@ -261,8 +245,6 @@ async def start(client, message):
         except:
             pass
         return await message.reply('No such file exist.')
-
-
     
     files = files_[0]
     title = files.file_name
@@ -316,26 +298,18 @@ async def start(client, message):
             pass
         await k.edit_text("<b>Your All Files/Videos is successfully deleted!!!</b>")       
         
-
-
-
 @Client.on_message(filters.command('api') & filters.private)
 async def shortener_api_handler(client, m: Message):
     user_id = m.from_user.id
     user = await get_user(user_id)
     cmd = m.command
-
     if len(cmd) == 1:
         s = script.SHORTENER_API_MESSAGE.format(base_site=user["base_site"], shortener_api=user["shortener_api"])
         return await m.reply(s)
-
     elif len(cmd) == 2:    
         api = cmd[1].strip()
         await update_user_info(user_id, {"shortener_api": api})
         await m.reply("<b>Shortener API updated successfully to</b> " + api)
-
-
-
 @Client.on_message(filters.command("base_site") & filters.private)
 async def base_site_handler(client, m: Message):
     user_id = m.from_user.id
@@ -354,9 +328,6 @@ async def base_site_handler(client, m: Message):
             return await m.reply(text=text, disable_web_page_preview=True)
         await update_user_info(user_id, {"base_site": base_site})
         await m.reply("<b>Base Site updated successfully</b>")
-
-
-
 @Client.on_callback_query()
 async def cb_handler(client: Client, query: CallbackQuery):
     if query.data == "close_data":
@@ -367,6 +338,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🔒 Cʟᴏsᴇ', callback_data='close_data')
         ]]
         await client.edit_message_media(
+
+    
+        
+          
+    
+
+        
+        Expand All
+    
+    @@ -386,7 +386,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
+  
             query.message.chat.id, 
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
@@ -376,21 +358,30 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.edit_text(
             text=script.ABOUT_TXT.format(me2),
             reply_markup=reply_markup,
-            has_spoiler = True,
             parse_mode=enums.ParseMode.HTML
         )
-
-
     
     elif query.data == "start":
         buttons = [[
             InlineKeyboardButton('🆘 ʜᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('🔎 ᴀʙᴏᴜᴛ', callback_data='about')                  
             ],[
-            InlineKeyboardButton('📵 ᴄᴏɴᴛᴀᴄᴛ ᴜs', url='https://t.me/sheffyssamra')
+            InlineKeyboardButton('📵 ᴄᴏɴᴛᴀᴄᴛ ᴜs', url='https://t.me/sheffyssamra'),
+            InlineKeyboardButton('🦾 ᴄʟᴏɴᴇ', callback_data='clone')
         ]]
-        
+
         reply_markup = InlineKeyboardMarkup(buttons)
+
+    
+        
+          
+    
+
+        
+        Expand All
+    
+    @@ -406,7 +407,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
+  
         await client.edit_message_media(
             query.message.chat.id, 
             query.message.id, 
@@ -400,18 +391,26 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.edit_text(
             text=script.START_TXT.format(query.from_user.mention, me2),
             reply_markup=reply_markup,
-            has_spoiler = True,
             parse_mode=enums.ParseMode.HTML
         )
 
-
-    
     elif query.data == "clone":
         buttons = [[
             InlineKeyboardButton('🏠 Hᴏᴍᴇ 🔙', callback_data='start'),
             InlineKeyboardButton('🔒 Cʟᴏsᴇ', callback_data='close_data')
         ]]
         await client.edit_message_media(
+
+    
+        
+          
+    
+
+        
+        Expand All
+    
+    @@ -425,7 +426,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
+  
             query.message.chat.id, 
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
@@ -420,18 +419,26 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.edit_text(
             text=script.CLONE_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
-            has_spoiler = True,
             parse_mode=enums.ParseMode.HTML
         )          
 
-
-    
     elif query.data == "help":
         buttons = [[
             InlineKeyboardButton('🏠 Hᴏᴍᴇ 🔙', callback_data='start'),
             InlineKeyboardButton('🔒 Cʟᴏsᴇ', callback_data='close_data')
         ]]
         await client.edit_message_media(
+
+    
+          
+            
+    
+
+          
+          Expand Down
+    
+    
+  
             query.message.chat.id, 
             query.message.id, 
             InputMediaPhoto(random.choice(PICS))
@@ -440,18 +447,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.edit_text(
             text=script.HELP_TXT,
             reply_markup=reply_markup,
-            has_spoiler = True,
             parse_mode=enums.ParseMode.HTML
         )  
-
-
-
     elif query.data.startswith("generate_stream_link"):
         _, file_id = query.data.split(":")
         try:
             user_id = query.from_user.id
             username =  query.from_user.mention 
-
             log_msg = await client.send_cached_media(
                 chat_id=LOG_CHANNEL,
                 file_id=file_id,
@@ -459,13 +461,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             fileName = {quote_plus(get_name(log_msg))}
             stream = f"{URL}watch/{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
             download = f"{URL}{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
-
             xo = await query.message.reply_text(f'🔐')
             await asyncio.sleep(1)
             await xo.delete()
-
-
-
             button = [[
                 InlineKeyboardButton("🚀 Fast Download 🚀", url=download),  # we download Link
                 InlineKeyboardButton('🖥️ Watch online 🖥️', url=stream)
@@ -494,4 +492,3 @@ async def cb_handler(client: Client, query: CallbackQuery):
             print(e)  # print the error message
             await query.answer(f"☣something went wrong\n\n{e}", show_alert=True)
             return
-
