@@ -24,9 +24,9 @@ If You Want To Remove Api Then Copy This And Send To Bot - `/api None`</blockquo
 <blockquote>🤖 ᴍʏ ɴᴀᴍᴇ: {}</blockquote>
 <blockquote>📝 ʟᴀɴɢᴜᴀɢᴇ: <a href=https://www.python.org>𝐏𝐲𝐭𝐡𝐨𝐧𝟑</a></blockquote>
 <blockquote>📚 ʟɪʙʀᴀʀʏ: <a href=https://docs.pyrogram.org>𝐏𝐲𝐫𝐨𝐠𝐫𝐚𝐦</a></blockquote>
-<blockquote>🧑🏻‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ: <a href=https://t.me/star_73>⚜️ ᴏᴡɴᴇʀ 🙋🏻‍♂️</a></blockquote>
+<blockquote>🧑🏻‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ: <a href=https://t.me/sheffyssamra>⚜️ ᴏᴡɴᴇʀ 🙋🏻‍♂️</a></blockquote>
 <blockquote>👥 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ: <a href=https://t.me/LINKING_BACKUP>🛠️ sᴜᴘᴘᴏʀᴛ 🤝</a></blockquote>
-<blockquote>📢 ᴍᴀɪɴᴛᴇɴᴀɴᴄᴇ: <a href=https://t.me/star_73>👷 ᴍᴀɪɴᴛᴇɴᴀɴᴄᴇ ⚙️</a></blockquote></b>
+<blockquote>📢 ᴍᴀɪɴᴛᴇɴᴀɴᴄᴇ: <a href=https://t.me/sheffyssamra>👷 ᴍᴀɪɴᴛᴇɴᴀɴᴄᴇ ⚙️</a></blockquote></b>
 """
 
     CABOUT_TXT = """<b><blockquote>ʜɪ ɪ ᴀᴍ ᴘᴇʀᴍᴀɴᴇɴᴛ ғɪʟᴇ sᴛᴏʀᴇ ʙᴏᴛ ᴡɪᴛʜ ᴄʟᴏɴᴇ ғᴇᴀᴛᴜʀᴇ + ᴄᴜsᴛᴏᴍ ᴜʀʟ sʜᴏʀᴛɴᴇʀ ɪᴛ ᴍᴇᴀɴs ᴀɴʏ ᴜsᴇʀ ᴄᴀɴ sᴇᴛ ʜɪs ᴜʀʟ sʜᴏʀᴛɴᴇʀ ᴀɴᴅ + ᴀᴜᴛᴏ ᴅᴇʟᴇᴛᴇ.</blockquote>
@@ -34,7 +34,7 @@ If You Want To Remove Api Then Copy This And Send To Bot - `/api None`</blockquo
 <blockquote>🤖 ᴍʏ ɴᴀᴍᴇ: {}</blockquote>
 <blockquote>📝 ʟᴀɴɢᴜᴀɢᴇ: <a href=https://www.python.org>𝐏𝐲𝐭𝐡𝐨𝐧𝟑</a></blockquote>
 <blockquote>📚 ʟɪʙʀᴀʀʏ: <a href=https://docs.pyrogram.org>𝐏𝐲𝐫𝐨𝐠𝐫𝐚𝐦</a></blockquote>
-<blockquote>🧑🏻‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ: <a href=https://t.me/star_73>⚜️ ᴏᴡɴᴇʀ 🙋🏻‍♂️</a></b></blockquote>
+<blockquote>🧑🏻‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ: <a href=https://t.me/sheffyssamra>⚜️ ᴏᴡɴᴇʀ 🙋🏻‍♂️</a></b></blockquote>
 """
 
     CLONE_TXT = """<b><blockquote>ʜᴇʟʟᴏ {} 👋</blockquote>
@@ -55,7 +55,7 @@ If You Want To Remove Api Then Copy This And Send To Bot - `/api None`</blockquo
 🔻 /link - ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴠɪᴅᴇᴏ ᴏʀ ғɪʟᴇ ᴛᴏ ɢᴇᴛ sʜᴀʀᴀʙʟᴇ ʟɪɴᴋ
 
 🔻 /batch - sᴇɴᴅ ғɪʀsᴛ ʟɪɴᴋ ᴏғ ғɪʟᴇ sᴛᴏʀᴇ ᴄʜᴀɴɴᴇʟ ᴘᴏsᴛ ᴛʜᴇɴ ʟᴀsᴛ ᴘᴏsᴛ ʟɪɴᴋ ᴀɴᴅ ᴍᴀᴋᴇ sᴜʀᴇ ʙᴏᴛ ɪs ᴀᴅᴍɪɴ ɪɴ ʏᴏᴜʀ ғɪʟᴇ sᴛᴏʀᴇ ᴄʜᴀɴɴᴇʟ.
-ᴇx - /batch https://t.me/star_73/25 https://t.me/star_73/30
+ᴇx - /batch https://t.me/sheffyssamra/25 https://t.me/sheffyssamra/30
 
 🔻 /base_site - ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ sᴇᴛ ᴜʀʟ sʜᴏʀᴛɴᴇʀ ʟɪɴᴋ ᴅᴏᴍᴀɪɴ 
 ᴇx - /base_site ʏᴏᴜʀᴅᴏᴍᴀɪɴ.ᴄᴏᴍ
