@@ -19,7 +19,7 @@ BOT_TOKEN = environ.get("BOT_TOKEN", "7056078697:AAEMgBUYQovrpTaEZEG7wGd_nk0YSsn
 
 PICS = (environ.get('PICS', 'https://graph.org/file/fc8838886656d4bf35eca.jpg')).split() # Bot Start Picture
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6514361814').split()]
-BOT_USERNAME = environ.get("BOT_USERNAME", "filestoreclone") # without @
+BOT_USERNAME = environ.get("BOT_USERNAME", "Filestorexcrownbot") # without @
 PORT = environ.get("PORT", "8080")
 
 # Clone Info :-
