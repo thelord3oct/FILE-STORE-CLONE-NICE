@@ -13,25 +13,25 @@ def is_enabled(value, default):
         return default
       
 # Bot Information
-API_ID = int(environ.get("API_ID", "29068358"))
-API_HASH = environ.get("API_HASH", "50acd1998912022582c789bebd9c2e10")
+API_ID = int(environ.get("API_ID", "20589413"))
+API_HASH = environ.get("API_HASH", "654d559a9a91daeecd9e760fc73e6766")
 BOT_TOKEN = environ.get("BOT_TOKEN", "7537293696:AAErjUD7dtq9CQ8Bagw429GB5pFNtWfnQcw")
 
-PICS = (environ.get('PICS', 'https://graph.org/file/bb07d35e461602ec56535.jpg https://graph.org/file/ea5e886775d11153934ca.jpg https://graph.org/file/29e102010755a1e5d4713.jpg https://graph.org/file/c523d2fd4a3afd72d40ec.jpg https://graph.org/file/7150563f55ad78d07aa2f.jpg')).split() # Bot Start Picture
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6218305989').split()]
-BOT_USERNAME = environ.get("BOT_USERNAME", "Lulli_testbot") # without @
+PICS = (environ.get('PICS', 'https://graph.org/file/fc8838886656d4bf35eca.jpg')).split() # Bot Start Picture
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6514361814').split()]
+BOT_USERNAME = environ.get("BOT_USERNAME", "filestoreclone") # without @
 PORT = environ.get("PORT", "8080")
 
 # Clone Info :-
-CLONE_MODE = bool(environ.get('CLONE_MODE', False)) # Set True or False
+CLONE_MODE = bool(environ.get('CLONE_MODE', True)) # Set True or False
 
 # If Clone Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
-CLONE_DB_URI = environ.get("CLONE_DB_URI", "")
-CDB_NAME = environ.get("CDB_NAME", "clonetechvj")
+CLONE_DB_URI = environ.get("CLONE_DB_URI", "mongodb+srv://filestore:filestore@filestore.ae2k31q.mongodb.net/?retryWrites=true&w=majority&appName=filestore")
+CDB_NAME = environ.get("CDB_NAME", "filestoreclone")
 
 # Database Information
-DB_URI = environ.get("DB_URI", "mongodb+srv://grouphelp:grouphelp@grouphelp.ccgqorv.mongodb.net/?retryWrites=true&w=majority&appName=grouphelp")
-DB_NAME = environ.get("DB_NAME", "morning-star")
+DB_URI = environ.get("DB_URI", "mongodb+srv://filestore:filestore@filestore.ae2k31q.mongodb.net/?retryWrites=true&w=majority&appName=filestore")
+DB_NAME = environ.get("DB_NAME", "filestore")
 
 # Auto Delete Information
 AUTO_DELETE_MODE = bool(environ.get('AUTO_DELETE_MODE', True)) # Set True or False
@@ -41,7 +41,7 @@ AUTO_DELETE = int(environ.get("AUTO_DELETE", "30")) # Time in Minutes
 AUTO_DELETE_TIME = int(environ.get("AUTO_DELETE_TIME", "1800")) # Time in Seconds
 
 # Channel Information
-LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1002239514369"))
+LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1002023566055"))
 
 # File Caption Information
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CAPTION}")
