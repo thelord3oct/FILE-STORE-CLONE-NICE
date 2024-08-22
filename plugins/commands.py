@@ -363,7 +363,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.delete()
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start'),
+            InlineKeyboardButton('🏠 Hᴏᴍᴇ 🔙', callback_data='start'),
             InlineKeyboardButton('🔒 Cʟᴏsᴇ', callback_data='close_data')
         ]]
         await client.edit_message_media(
@@ -386,7 +386,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🆘 ʜᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('🔎 ᴀʙᴏᴜᴛ', callback_data='about')                  
             ],[
-            InlineKeyboardButton('📵 ᴄᴏɴᴛᴀᴄᴛ ᴜs', url='https://t.me/sheffyssamra')
+            InlineKeyboardButton('📵 ᴄᴏɴᴛᴀᴄᴛ ᴜs', url='https://t.me/sheffyssamra'),
+            InlineKeyboardButton('🦾 ᴄʟᴏɴᴇ', callback_data='clone')
         ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -406,7 +407,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data == "clone":
         buttons = [[
-            InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start'),
+            InlineKeyboardButton('🏠 Hᴏᴍᴇ 🔙', callback_data='start'),
             InlineKeyboardButton('🔒 Cʟᴏsᴇ', callback_data='close_data')
         ]]
         await client.edit_message_media(
@@ -425,7 +426,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start'),
+            InlineKeyboardButton('🏠 Hᴏᴍᴇ 🔙', callback_data='start'),
             InlineKeyboardButton('🔒 Cʟᴏsᴇ', callback_data='close_data')
         ]]
         await client.edit_message_media(
