@@ -15,11 +15,11 @@ def is_enabled(value, default):
 # Bot Information
 API_ID = int(environ.get("API_ID", "20589413"))
 API_HASH = environ.get("API_HASH", "654d559a9a91daeecd9e760fc73e6766")
-BOT_TOKEN = environ.get("BOT_TOKEN", "7056078697:AAEMgBUYQovrpTaEZEG7wGd_nk0YSsnz8Qk")
+BOT_TOKEN = environ.get("BOT_TOKEN", "7864006667:AAGWs_phswIIHu8o-XOpsWrFaUhAg7NDzm4")
 
-PICS = (environ.get('PICS', 'https://graph.org/file/fc8838886656d4bf35eca.jpg')).split() # Bot Start Picture
+PICS = (environ.get('PICS', 'https://i.ibb.co/K7yXzDQ/file-3.jpg')).split() # Bot Start Picture
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6514361814').split()]
-BOT_USERNAME = environ.get("BOT_USERNAME", "Filestorexcrownbot") # without @
+BOT_USERNAME = environ.get("BOT_USERNAME", "Athena_File_Bot") # without @
 PORT = environ.get("PORT", "8080")
 
 # Clone Info :-
@@ -27,11 +27,11 @@ CLONE_MODE = bool(environ.get('CLONE_MODE', False)) # Set True or False
 
 # If Clone Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
 CLONE_DB_URI = environ.get("CLONE_DB_URI", "mongodb+srv://filestore:filestore@filestore.ae2k31q.mongodb.net/?retryWrites=true&w=majority&appName=filestore")
-CDB_NAME = environ.get("CDB_NAME", "filestoreclone")
+CDB_NAME = environ.get("CDB_NAME", "theclonlord")
 
 # Database Information
 DB_URI = environ.get("DB_URI", "mongodb+srv://filestore:filestore@filestore.ae2k31q.mongodb.net/?retryWrites=true&w=majority&appName=filestore")
-DB_NAME = environ.get("DB_NAME", "filestore")
+DB_NAME = environ.get("DB_NAME", "thelord")
 
 # Auto Delete Information
 AUTO_DELETE_MODE = bool(environ.get('AUTO_DELETE_MODE', True)) # Set True or False
@@ -41,7 +41,7 @@ AUTO_DELETE = int(environ.get("AUTO_DELETE", "30")) # Time in Minutes
 AUTO_DELETE_TIME = int(environ.get("AUTO_DELETE_TIME", "1800")) # Time in Seconds
 
 # Channel Information
-LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1002023566055"))
+LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1002430206734"))
 
 # File Caption Information
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CAPTION}")
